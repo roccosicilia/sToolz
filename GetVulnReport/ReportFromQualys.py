@@ -8,10 +8,7 @@
 
 import sys
 import requests
-import json
-import xml
 import time
-# import qualysapi
 import xml.etree.ElementTree as ET
 import config as cfg
 
