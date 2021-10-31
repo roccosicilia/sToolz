@@ -1,0 +1,6 @@
+qualys = {
+    "baseurl":   "",
+    "api":       "",
+    "auth":      "",
+
+}
