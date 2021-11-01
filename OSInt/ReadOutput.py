@@ -10,30 +10,33 @@
 import sys
 import json
 
-with open('rawdata.json') as json_file:
-    results = json.load(json_file)
+if len(sys.argv) == 1:
 
-    ## view all information
-    print("####################")
-    print(results["search_metadata"])
+    with open('rawdata.json') as json_file:
+        results = json.load(json_file)
 
-    print("####################")
-    print(results["search_parameters"])
+        ## view all information
+        print("####################")
+        print(results["search_metadata"])
 
-    print("####################")
-    print(results["search_information"])
+        print("####################")
+        print(results["search_parameters"])
 
-    print("####################")
-    print(results["organic_results"])
+        print("####################")
+        print(results["search_information"])
 
-    print("####################")
-    print(results["pagination"])
+        print("####################")
+        print(results["organic_results"])
 
-    print("####################")
-    print(results["serpapi_pagination"])
+        print("####################")
+        print(results["pagination"])
 
-### print file list
-if sys.argv[1] == '-p':
-    for result in results["organic_results"]:
-        print(result['title'])
-        
+        print("####################")
+        print(results["serpapi_pagination"])
+
+else:
+
+    ### print file list
+    if sys.argv[1] == '-p':
+        for result in results["organic_results"]:
+            print(result['title'])
