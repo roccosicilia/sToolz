@@ -26,8 +26,7 @@ else:
     keyw = ''
 
 params = {
-  "q": keyw + ' site:"' + site + '" filetype:"' + filetype +'"',
-  "google_domain": "google.com",
+  "q": keyw + ' site:' + site + ' filetype:' + filetype,
   "api_key": cfg.google["token"]
 }
 
