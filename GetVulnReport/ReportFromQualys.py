@@ -2,7 +2,7 @@
 #
 # Get XML report from QUALYS
 # Author: Rocco <Sheliak> Sicilia
-# Usage: $ GetReport.py {_DATE_}
+# Usage: $ ReportFromQualys.py {_DATE_}
 #
 ###################################################################################################
 
@@ -92,5 +92,5 @@ if len(sys.argv) == 2:
 
             print("--------------------")
 else:
-    print("Usage: python ./GetReport.py YYYY/MM/DD ")
+    print("Usage: python ./ReportFromQualys.py YYYY/MM/DD ")
 
