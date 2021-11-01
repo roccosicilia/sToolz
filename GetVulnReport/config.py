@@ -1,6 +1,6 @@
 qualys = {
-    "baseurl":   "",
-    "api":       "",
-    "auth":      "",
-
+    "baseurl": "",
+    "api": "",
+    "auth": "",
+    "users": "",
 }
