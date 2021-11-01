@@ -1,6 +1,4 @@
-## ignore config gile
-*config.py
-*config.yml
-*config.json
-
-
+## ignore config file
+**config.py
+**config.yml
+**config.json
