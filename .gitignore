@@ -1,6 +1,6 @@
 ## ignore config file
 
-/**/config.py
-/**/config.yml
-/**/config.json
+**/config.py
+**/config.yml
+**/config.json
 
