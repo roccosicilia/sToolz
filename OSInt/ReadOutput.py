@@ -50,4 +50,4 @@ else:
     ### print file list
     if sys.argv[1] == '-f':
         for result in results["organic_results"]:
-            print(result['about_this_result'])
+            print(result['about_this_result']['source'])
