@@ -33,4 +33,7 @@ params = {
 search = GoogleSearch(params)
 results = search.get_dict()
 
-print(results)
+for result in results:
+    print("##########")
+    print(result)
+    
