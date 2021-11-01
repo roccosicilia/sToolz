@@ -34,6 +34,8 @@ if len(sys.argv) == 1:
         print("####################")
         print(results["serpapi_pagination"])
 
+        sys.exit()
+
 else:
 
     ### print file list
