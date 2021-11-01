@@ -3,7 +3,8 @@
 # Read json output
 # Author: Rocco <Sheliak> Sicilia
 # Usage: $ ReadOutput.py {_OPERATION_}
-#          ---> "-p"    print file list
+#          ---> "-p"    print file title
+#          ---> "-f"    print file list
 #
 ###################################################################################################
 
@@ -41,7 +42,12 @@ else:
     with open('rawdata.json') as json_file:
         results = json.load(json_file)
 
-    ### print file list
+    ### print file title
     if sys.argv[1] == '-p':
         for result in results["organic_results"]:
             print(result['title'])
+
+    ### print file list
+    if sys.argv[1] == '-f':
+        for result in results["organic_results"]:
+            print(result['related_pages_link'])
