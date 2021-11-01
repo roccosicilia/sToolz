@@ -35,5 +35,5 @@ params = {
 search = GoogleSearch(params)
 results = search.get_dict()
 
-with open('data.json', 'w') as outfile:
+with open('rawdata.json', 'w') as outfile:
     json.dump(results, outfile)

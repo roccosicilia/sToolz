@@ -2,14 +2,15 @@
 #
 # Read json output
 # Author: Rocco <Sheliak> Sicilia
-# Usage: $ ReadOutput.py {_FILENAME_}
+# Usage: $ ReadOutput.py {_OPERATION_}
+#          ---> "-p"    print file list
 #
 ###################################################################################################
 
 import sys
 import json
 
-with open('data.json') as json_file:
+with open('rawdata.json') as json_file:
     results = json.load(json_file)
 
     ## view all information
@@ -31,4 +32,8 @@ with open('data.json') as json_file:
     print("####################")
     print(results["serpapi_pagination"])
 
-
+### print file list
+if sys.argv[1] == '-p':
+    for result in results["organic_results"]:
+        print(result['title'])
+        
