@@ -20,7 +20,7 @@ if sys.argv[2]:
 else:
     sys.exit()
 
-if sys.argv[3]:
+if len(sys.argv) == 4:
     keyw = sys.argv[3]
 else:
     keyw = ''
