@@ -6,10 +6,9 @@
 #
 ###################################################################################################
 
-from serpapi import GoogleSearch
-import config as cfg
 import sys
-
+import config as cfg
+from serpapi import GoogleSearch
 
 if sys.argv[1]:
     site = sys.argv[1]
