@@ -9,6 +9,7 @@
 import sys
 import config as cfg
 from serpapi import GoogleSearch
+import json
 
 if sys.argv[1]:
     site = sys.argv[1]
@@ -33,7 +34,5 @@ params = {
 search = GoogleSearch(params)
 results = search.get_dict()
 
-for result in results:
-    print("##########")
-    print(result)
-    
+with open('data.json', 'w') as outfile:
+    json.dump(results, outfile)
