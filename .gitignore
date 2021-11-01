@@ -1,6 +1,5 @@
 ## ignore config file
 
-**/config.py
-**/config.yml
-**/config.json
+GetVulnReport/config.py
+OSInt/config.py
 
