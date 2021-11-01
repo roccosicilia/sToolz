@@ -38,6 +38,9 @@ if len(sys.argv) == 1:
 
 else:
 
+    with open('rawdata.json') as json_file:
+        results = json.load(json_file)
+
     ### print file list
     if sys.argv[1] == '-p':
         for result in results["organic_results"]:
