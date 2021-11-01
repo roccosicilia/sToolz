@@ -1,5 +1,4 @@
 google = {
     "baseurl": "",
-    "api": "",
     "auth": "",
 }
