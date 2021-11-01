@@ -12,6 +12,7 @@ import json
 with open('data.json') as json_file:
     results = json.load(json_file)
 
+    ## view all information
     print("####################")
     print(results["search_metadata"])
 
@@ -29,4 +30,5 @@ with open('data.json') as json_file:
 
     print("####################")
     print(results["serpapi_pagination"])
-    
+
+

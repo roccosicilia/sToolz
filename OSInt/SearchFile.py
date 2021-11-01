@@ -28,6 +28,7 @@ else:
 
 params = {
   "q": keyw + ' site:' + site + ' filetype:' + filetype,
+  "num": 500,
   "api_key": cfg.google["token"]
 }
 
