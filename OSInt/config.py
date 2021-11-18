@@ -1,5 +1,0 @@
-google = {
-    "baseurl": "",
-    "api": "",
-    "token": "",
-}
