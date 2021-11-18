@@ -8,5 +8,5 @@ Get report from Vulnerability Scan software like Qualys, Nessus.
 
 ## OSInt
 
-A collection of script to collect information from S.E. and other platforms
-Onion site listes.
+SearchEngApi :: A collection of script to collect information from S.E. and other platforms.
+Resource :: Website and docs.
