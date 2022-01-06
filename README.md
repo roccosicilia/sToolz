@@ -10,3 +10,4 @@ Get report from Vulnerability Scan software like Qualys, Nessus.
 
 * SearchEngApi :: A collection of script to collect information from S.E. and other platforms.
 * Resource :: Website and docs.
+* DorksScript / GDrive.py :: Returns a list of public URL for Google Drive contents
