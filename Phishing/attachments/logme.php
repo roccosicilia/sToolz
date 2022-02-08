@@ -8,7 +8,7 @@
 ###################################################################################################
 
 // env var
-$logpath = '/var/www/html/logs'
+$logpath = '/var/www/html/logs';
 
 if (isset($_GET["os_ver"]) && isset($_GET["hostname"]) && isset($_GET["local_ip"]))
 {
