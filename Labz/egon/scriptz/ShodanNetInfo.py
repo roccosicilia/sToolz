@@ -11,6 +11,7 @@ import json
 import requests
 import time
 import config as cfg
+import ipaddress
 
 # vars
 shodan_auth = cfg.shodan["auth"]
@@ -50,22 +51,82 @@ def GetDnsInfo(domain, type):
 
 # get data from Shodan
 for host in GetDnsInfo(domain, 'MX'):
-    report = requests.get("https://api.shodan.io/shodan/host/{}?key={}".format(host, shodan_auth))
-    report_json = json.loads(report.text)
-    try:
-        report_data = report_json['data']
+    print("# Query for {}".format(host))
+    request_host = requests.get("https://dns.google/resolve?name={}&type={}".format(host, 'A'))
+    request_json = json.loads(request_host.text)
+    answers = request_json["Answer"]
+    for host_ip in answers:
+        print("# Resolv host {} to {}".format(host, host_ip["data"]))
 
-        for i in report_data:
-            try:
-                print("Vulns list for CPE {}".format(i["cpe"]))
+        report = requests.get("https://api.shodan.io/shodan/host/{}?key={}".format(host_ip["data"], shodan_auth))
+        report_json = json.loads(report.text)
+        try:
+            report_data = report_json['data']
+
+            for i in report_data:
                 try:
-                    vulns = i["vulns"]
-                    for vuln in vulns:
-                        detailts = vulns[vuln]
-                        print("{} \tcvss: {} \tVerified: {}".format(vuln, detailts["cvss"], detailts["verified"]))
+                    print("Vulns list for CPE {}".format(i["cpe"]))
+                    try:
+                        vulns = i["vulns"]
+                        for vuln in vulns:
+                            detailts = vulns[vuln]
+                            print("{} \tcvss: {} \tVerified: {}".format(vuln, detailts["cvss"], detailts["verified"]))
+                    except:
+                        print("No vulns found")
                 except:
-                    print("No vulns found")
+                    print("CPE not available")
+        except:
+            print("Shodan data not available")
+
+for host in GetDnsInfo(domain, 'TXT'):
+    print("# Query for {}".format(host))
+    if '/' in host:
+        print("# Subnet...")
+        for addr in ipaddress.IPv4Network(host):
+            report = requests.get("https://api.shodan.io/shodan/host/{}?key={}".format(addr, shodan_auth))
+            report_json = json.loads(report.text)
+            try:
+                report_data = report_json['data']
+                print("# Check data for {}".format(addr))
+                for i in report_data:
+                    try:
+                        print("Vulns list for CPE {}".format(i["cpe"]))
+                        try:
+                            vulns = i["vulns"]
+                            for vuln in vulns:
+                                detailts = vulns[vuln]
+                                print("{} \tcvss: {} \tVerified: {}".format(vuln, detailts["cvss"], detailts["verified"]))
+                        except:
+                            print("No vulns found")
+                    except:
+                        print("CPE not available")
             except:
-                print("CPE not available")
-    except:
-        print("Shodan data not available")
+                print("Shodan data not available")
+    else:
+        request_host = requests.get("https://dns.google/resolve?name={}&type={}".format(host, 'A'))
+        request_json = json.loads(request_host.text)
+        try:
+            answers = request_json["Answer"]
+            for host_ip in answers:
+                print("# Resolv host {} to {}".format(host, host_ip["data"]))
+                report = requests.get("https://api.shodan.io/shodan/host/{}?key={}".format(host_ip["data"], shodan_auth))
+                report_json = json.loads(report.text)
+                try:
+                    report_data = report_json['data']
+
+                    for i in report_data:
+                        try:
+                            print("Vulns list for CPE {}".format(i["cpe"]))
+                            try:
+                                vulns = i["vulns"]
+                                for vuln in vulns:
+                                    detailts = vulns[vuln]
+                                    print("{} \tcvss: {} \tVerified: {}".format(vuln, detailts["cvss"], detailts["verified"]))
+                            except:
+                                print("No vulns found")
+                        except:
+                            print("CPE not available")
+                except:
+                    print("Shodan data not available")
+        except:
+            print("Shodan data not complete")
