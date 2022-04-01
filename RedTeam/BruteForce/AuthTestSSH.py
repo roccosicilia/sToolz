@@ -2,8 +2,7 @@
 #
 # Test SSH login
 # Author: Rocco <Sheliak> Sicilia
-# Usage: $ 
-# Usage sample: 
+# Usage: $ python3 AuthTestSSH.py {target_ip} {username}
 #
 ###################################################################################################
 
