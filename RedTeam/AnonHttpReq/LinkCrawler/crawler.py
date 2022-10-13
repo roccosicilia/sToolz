@@ -31,6 +31,6 @@ for line in lines:
                 link = link.replace("'", '')
                 link = link.replace('"', '')
                 if len(link) > 3 and target in link:
-                    # print(link)
+                    print(link)
                     with open("{}".format(filename), "a") as output:
                         output.write(link + "\r\n")
