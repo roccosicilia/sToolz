@@ -1,6 +1,6 @@
 ###################################################################################################
 #
-# Get data link from a website
+# Get link from a website
 # Author: Rocco <Sheliak> Sicilia
 # Usage: $ python ./crawler.py {target} {filename}
 #
