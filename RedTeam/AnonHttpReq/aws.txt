@@ -1,3 +1,0 @@
-http://ec2-15-161-154-157.eu-south-1.compute.amazonaws.com/test1.html
-http://ec2-15-161-154-157.eu-south-1.compute.amazonaws.com/test2.html
-http://ec2-15-161-154-157.eu-south-1.compute.amazonaws.com/test3.html
