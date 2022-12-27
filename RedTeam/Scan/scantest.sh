@@ -1,7 +1,7 @@
 
 # set var
 args=("$@")
-target = ${args[1]}
+target=${args[1]}
 
 # out
 echo "Setup scan for $target"
