@@ -22,3 +22,9 @@ VulnReport
 /home/sheliak/Toolz/sToolz
 /home/sheliak/Toolz/sToolz
 /home/sheliak/Toolz/sToolz
+OffSec
+Phishing
+README.md
+RedTeam
+ShodanScripts
+VulnReport
