@@ -11,3 +11,11 @@ README.md
 RedTeam
 ShodanScripts
 VulnReport
+OffSec
+output.txt
+Phishing
+README.md
+RedTeam
+ShodanScripts
+VulnReport
+/home/sheliak/Toolz/sToolz
