@@ -20,3 +20,4 @@ ShodanScripts
 VulnReport
 /home/sheliak/Toolz/sToolz
 /home/sheliak/Toolz/sToolz
+/home/sheliak/Toolz/sToolz
