@@ -19,7 +19,7 @@ else
     # do something
     eval $CMD >> ./output.txt
     # commit and push
-    git add 
+    git add .
     git commit -m "NOP"
     git push
 fi
