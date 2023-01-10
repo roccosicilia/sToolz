@@ -17,7 +17,7 @@ then
     echo "NOP"
 else
     # do something
-    eval $CMD >> ./output.txt
+    eval $CMD >> $BASEDIR/RedTeam/C2demo/output.txt
     # commit and push
     git add .
     git commit -m "NOP"
