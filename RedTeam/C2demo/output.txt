@@ -42,3 +42,4 @@ RedTeam
 ShodanScripts
 VulnReport
 /home/sheliak/Toolz/sToolz
+OffSec Phishing README.md RedTeam ShodanScripts VulnReport
