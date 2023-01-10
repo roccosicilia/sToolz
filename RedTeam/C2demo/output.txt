@@ -50,3 +50,9 @@ README.md
 RedTeam
 ShodanScripts
 VulnReport
+OffSec
+Phishing
+README.md
+RedTeam
+ShodanScripts
+VulnReport
