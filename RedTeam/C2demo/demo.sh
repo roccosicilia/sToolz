@@ -8,7 +8,7 @@ cd $BASEDIR
 git pull
 
 # get command
-CMD=$(git log -2 | awk 'NR==5 {print $1}')
+CMD=$(git log -1 | awk 'NR==5 {print $1}')
 
 # check NOP
 if [ $CMD = 'NOP' ]
