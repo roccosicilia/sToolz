@@ -62,3 +62,10 @@ README.md
 RedTeam
 ShodanScripts
 VulnReport
+total 24
+drwxr-xr-x 2 sheliak sheliak 4096 Jan 10 01:22 OffSec
+drwxr-xr-x 4 sheliak sheliak 4096 Jan 10 01:22 Phishing
+-rw-r--r-- 1 sheliak sheliak  615 Jan 10 01:22 README.md
+drwxr-xr-x 8 sheliak sheliak 4096 Jan 10 01:22 RedTeam
+drwxr-xr-x 2 sheliak sheliak 4096 Jan 10 01:22 ShodanScripts
+drwxr-xr-x 2 sheliak sheliak 4096 Jan 10 01:22 VulnReport
