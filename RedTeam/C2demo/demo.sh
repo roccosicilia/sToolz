@@ -1,4 +1,4 @@
-#!/sbin/bash
+#!/usr/bin/bash
 
 # VAR
 BASEDIR=/home/sheliak/Toolz/sToolz
