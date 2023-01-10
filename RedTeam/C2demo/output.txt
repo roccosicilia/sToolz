@@ -4,3 +4,10 @@ NOP/home/sheliak/Toolz/sToolz
 
 /home/sheliak/Toolz/sToolz
 /home/sheliak/Toolz/sToolz
+OffSec
+output.txt
+Phishing
+README.md
+RedTeam
+ShodanScripts
+VulnReport
