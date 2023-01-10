@@ -11,7 +11,7 @@ git pull
 CMD=$(git log -1 | awk 'NR==5 {print $1}')
 
 # check NOP
-if [ $CMD = 'NOP' ]
+if [ "$CMD" = 'NOP' ]
 then
     # do nothing
     echo "NOP"
