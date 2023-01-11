@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Change with your BASEDIR: default /tmp/sToolz
-BASEDIR=/tmp/sToolz 
+BASEDIR="/tmp/sToolz"
 
 # repo update
 cd $BASEDIR
