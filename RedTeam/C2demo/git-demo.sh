@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-# VAR
-BASEDIR=/home/sheliak/Toolz/sToolz
+# Change with your BASEDIR
+BASEDIR=/tmp/sToolz 
 
 # repo update
 cd $BASEDIR
