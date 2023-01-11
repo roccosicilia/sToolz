@@ -24,4 +24,5 @@ else
     git add .
     git commit -m "NOP"
     git push
+    echo "Information sent..."
 fi
