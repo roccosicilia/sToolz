@@ -17,8 +17,9 @@ then
     echo "NOP"
 else
     # format output
+    NOW=date
     echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
-    echo "# $(DATE) "                               >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo "# $NOW "                               >> $BASEDIR/RedTeam/C2demo/output.txt
     echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
     echo ""                                         >> $BASEDIR/RedTeam/C2demo/output.txt
 
