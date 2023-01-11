@@ -251,3 +251,20 @@ drwxr-xr-x  2 root     root      4096 Aug 13 15:58 xfce4
 drwxr-xr-x  2 root     root      4096 Jun 24  2022 xl2tpd
 drwxr-xr-x  3 root     root      4096 Jun 24  2022 xrdp
 drwxr-xr-x  2 root     root      4096 May 17  2022 zsh
+########################################
+date
+########################################
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdb        251G  7.2G  232G   3% /
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+tools           476G  371G  105G  78% /init
+none            3.9G     0  3.9G   0% /dev
+none            3.9G     0  3.9G   0% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G     0  3.9G   0% /run/user
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+drivers         476G  371G  105G  78% /usr/lib/wsl/drivers
+lib             476G  371G  105G  78% /usr/lib/wsl/lib
+drvfs           476G  371G  105G  78% /mnt/c
