@@ -19,9 +19,9 @@ else
     # format output
     NOW=date
     echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
-    echo "# $NOW "                               >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo $NOW >> $BASEDIR/RedTeam/C2demo/output.txt
     echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
-    echo ""                                         >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo "" >> $BASEDIR/RedTeam/C2demo/output.txt
 
     # do something
     ### IFS=', ' read -r -a array <<< $CMD
