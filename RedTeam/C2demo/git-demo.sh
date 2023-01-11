@@ -16,10 +16,16 @@ then
     # do nothing
     echo "NOP"
 else
+    # format output
+    echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo "# $(DATE) "                               >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo ""                                         >> $BASEDIR/RedTeam/C2demo/output.txt
+
     # do something
-    IFS=', ' read -r -a array <<< $CMD
+    ### IFS=', ' read -r -a array <<< $CMD
     eval "$CMD" >> $BASEDIR/RedTeam/C2demo/output.txt
-    ### $CMD >> $BASEDIR/RedTeam/C2demo/output.txt
+
     # commit and push
     git add .
     git commit -m "NOP"
