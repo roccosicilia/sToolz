@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Change with your BASEDIR
+# Change with your BASEDIR: default /tmp/sToolz
 BASEDIR=/tmp/sToolz 
 
 # repo update
