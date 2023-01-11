@@ -4,3 +4,20 @@
 
 total 4
 drwxr-xr-x 22 sheliak sheliak 4096 Jan 11 16:06 sheliak
+########################################
+date
+########################################
+
+total 40
+drwxr-xr-x  2 root root  4096 Apr 27  2022 backups
+drwxr-xr-x 13 root root  4096 Oct 27 00:44 cache
+drwxr-xr-x 51 root root  4096 Dec 17 01:21 lib
+drwxrwsr-x  2 root staff 4096 Apr 27  2022 local
+lrwxrwxrwx  1 root root     9 May 17  2022 lock -> /run/lock
+drwxr-xr-x 13 root root  4096 Oct 27 00:44 log
+drwxrwsr-x  2 root mail  4096 May 17  2022 mail
+drwxr-xr-x  2 root root  4096 May 17  2022 opt
+lrwxrwxrwx  1 root root     4 May 17  2022 run -> /run
+drwxr-xr-x  4 root root  4096 Jun 24  2022 spool
+drwxrwxrwt  2 root root  4096 Apr 27  2022 tmp
+drwxr-xr-x  3 root root  4096 Oct 27 00:44 www
