@@ -1,1 +1,1 @@
-dir c:\
+ipconfig -all
