@@ -7,7 +7,8 @@ if ( "$cmd" -eq 'NOP')
 {
     Write-Host $cmd
 }
-else {
+else
+{
     $content = Invoke-Expression $cmd
-    Write-Host $content >> output.txt
+    Write-Host $content >> psoutput.txt
 }
