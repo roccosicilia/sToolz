@@ -17,14 +17,14 @@ then
     echo "NOP"
 else
     # format output
-    echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
-    date >> $BASEDIR/RedTeam/C2demo/output.txt
-    echo "########################################" >> $BASEDIR/RedTeam/C2demo/output.txt
-    echo "" >> $BASEDIR/RedTeam/C2demo/output.txt
+    echo "########################################" >> $BASEDIR/RedTeam/C2demo/git-output.txt
+    date >> $BASEDIR/RedTeam/C2demo/git-output.txt
+    echo "########################################" >> $BASEDIR/RedTeam/C2demo/git-output.txt
+    echo "" >> $BASEDIR/RedTeam/C2demo/git-output.txt
 
     # do something
     ### IFS=', ' read -r -a array <<< $CMD
-    eval "$CMD" >> $BASEDIR/RedTeam/C2demo/output.txt
+    eval "$CMD" >> $BASEDIR/RedTeam/C2demo/git-output.txt
 
     # commit and push
     git add .
