@@ -15,3 +15,20 @@ tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
 drivers         476G  372G  105G  79% /usr/lib/wsl/drivers
 lib             476G  372G  105G  79% /usr/lib/wsl/lib
 drvfs           476G  372G  105G  79% /mnt/c
+########################################
+Thu Jan 12 11:56:46 PM CET 2023
+########################################
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdb        251G  7.2G  232G   3% /
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+tools           476G  372G  105G  79% /init
+none            3.9G     0  3.9G   0% /dev
+none            3.9G     0  3.9G   0% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G     0  3.9G   0% /run/user
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+drivers         476G  372G  105G  79% /usr/lib/wsl/drivers
+lib             476G  372G  105G  79% /usr/lib/wsl/lib
+drvfs           476G  372G  105G  79% /mnt/c
