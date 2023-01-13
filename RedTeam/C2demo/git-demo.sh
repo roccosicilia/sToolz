@@ -32,3 +32,4 @@ else
     git push
     echo "Information sent..."
 fi
+
